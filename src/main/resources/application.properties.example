@@ -1,0 +1,11 @@
+#createdb -h <host> -p <port> -U postgres <dbname>
+
+spring.datasource.url= jdbc:postgresql://localhost:5432/<dbname>
+spring.datasource.username=postgres
+spring.datasource.password=<pgpass>
+
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.generate-ddl=true
+
+server.port=?
